@@ -72,10 +72,19 @@ nav a:hover{
 }
 
 .logo img{
-    width: 300px;
-    
+    width: 350px;
+    margin: 10px;
 }
 
 .textointroducao{
-    max-width: 500px;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.textointroducao p{
+    font: normal normal 1em Arial;
+    text-align: justify;
+    text-indent: 10px;
+    padding: 5px;
+    margin: 10px;
 }
