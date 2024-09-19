@@ -79,7 +79,7 @@ main{
     justify-content: center;
     width: 600px;
     background-color: #333666;
-    margin: 30px;
+    margin: 50px;
     padding: 40px;
     border-radius: 20px;
 }
@@ -87,12 +87,16 @@ main{
 .cadastro{
     margin: 5px;
     width: 220px;
-    font: normal normal 1.1em Arial;
+    font: normal normal 1.2em Arial;
+    text-shadow: 3px 3px 10px rgba(0, 255, 255, 0.444);
     color: aqua;
 }
 
 .input{
     border: 2px solid black;
     display: block;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 255, 255, 0.422);
     width: 200px;
 }
