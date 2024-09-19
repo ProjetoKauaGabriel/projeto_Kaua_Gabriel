@@ -73,7 +73,7 @@ nav a:hover{
 
 .logo img{
     width: 350px;
-    margin: 10px;
+    margin: 50px 10px 20px 10px;
 }
 
 .textointroducao{
@@ -82,9 +82,41 @@ nav a:hover{
 }
 
 .textointroducao p{
-    font: normal normal 1em Arial;
+    font: normal normal 1.2em Arial;
     text-align: justify;
     text-indent: 10px;
     padding: 5px;
     margin: 10px;
+}
+
+.apoiadores{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apoiadores img{
+    width: 700px;
+}
+
+.textapoiadores{
+    font: normal normal 1.2em Arial;
+    text-align: justify;
+    padding: 10px;
+    text-indent: 10px;
+    max-width: 140vh;
+}
+
+footer{
+    width: 100%;
+    background-color: #010fe6;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    font: normal normal 1.1em Arial;
+    padding: 10px;
 }
