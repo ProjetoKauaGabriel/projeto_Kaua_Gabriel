@@ -69,7 +69,33 @@ main{
     justify-content: center;
 }
 
-.oncas{
-    
+body{
+    margin: auto;
+    display:;
+    justify-content: center; 
+    align-items: center;
+}
+.oncas img{
+    float: left;
     width: 650px;
+    max-width: 100%;
+    height: auto;
+}
+.pumas img{
+    float: left;
+    width: 650px;
+    max-width: 100%;
+    height: auto;
+}
+.panteras img{
+    float: left;
+    width: 650px;
+    max-width: 100%;
+    height: auto;
+}
+.tigresas img{
+    float: left;
+    width: 650px;
+    max-width: 100%;
+    height: auto;
 }
