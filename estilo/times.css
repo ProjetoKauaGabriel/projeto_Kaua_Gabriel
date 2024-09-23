@@ -68,51 +68,53 @@ main{
     background-color: white;
     justify-content: center;
 }
-
+main h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 body{
     margin: auto;
-    justify-content: center; 
-    align-items: center;
-    flex-wrap: wrap;
 }
 .oncas img{
     float: left;
     width: 800px;
     max-width: 100%;
     height: auto;
+    margin-bottom: 45px;
 }
 .textooncas{
     float: right;
     justify-content: right;
     width: 700px;
+    margin-bottom: 30px;
 }
 
-hr{
-    margin: 250px;
-    background-color:#050a30;
-   
-}
 .pumas img{
     float: left;
     width: 800px;
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
 }
 .textopumas{
     float: right;
     justify-content: right;
     width: 700px;
+    margin-bottom: 30px;
 }
 .panteras img{
     float: left;
     width: 800px;
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
 }
 .textopanteras{
     float: right;
     justify-content: right;
     width: 700px;
+    margin-bottom: 30px;
 }
 .tigresas img{
     float: left;
