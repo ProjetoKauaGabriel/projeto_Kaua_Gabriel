@@ -79,14 +79,41 @@ nav a:hover{
     margin: 20px;
 }
 
-.introducao p{
+.textointroducao{
+    max-width: 700px;   
+}
+
+.textointroducao h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.textointroducao p{
+    text-align: justify;
+    padding: 10px;
+    text-indent: 10px;
+    margin: 5px;
+}
+
+.continuacao{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 1140px;
+}
+
+.continuacao h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.continuacao h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.continuacao p{
     text-indent: 10px;
     text-align: justify;
     padding: 10px;
     margin: 5px;
-    width: 1000px;
-}
-
-.continuacao{
-
 }
