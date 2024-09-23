@@ -71,31 +71,57 @@ main{
 
 body{
     margin: auto;
-    display:;
     justify-content: center; 
     align-items: center;
+    flex-wrap: wrap;
 }
 .oncas img{
     float: left;
-    width: 650px;
+    width: 800px;
     max-width: 100%;
     height: auto;
+}
+.textooncas{
+    float: right;
+    justify-content: right;
+    width: 700px;
+}
+
+hr{
+    margin: 250px;
+    background-color:#050a30;
+   
 }
 .pumas img{
     float: left;
-    width: 650px;
+    width: 800px;
     max-width: 100%;
     height: auto;
+}
+.textopumas{
+    float: right;
+    justify-content: right;
+    width: 700px;
 }
 .panteras img{
     float: left;
-    width: 650px;
+    width: 800px;
     max-width: 100%;
     height: auto;
 }
+.textopanteras{
+    float: right;
+    justify-content: right;
+    width: 700px;
+}
 .tigresas img{
     float: left;
-    width: 650px;
+    width: 800px;
     max-width: 100%;
     height: auto;
+}
+.textotigresas{
+    float: right;
+    justify-content: right;
+    width: 700px;
 }
