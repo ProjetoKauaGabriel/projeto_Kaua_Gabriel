@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilo/cadastro.css">
-    <title>Cadastro para AVOG</title>
+    <title>Cadastre-se</title>
 </head>
 <body>
     <header>
@@ -13,24 +13,11 @@
            <a href="../index.html">Início</a> |
            <a href="times.html">Times</a> |
            <a href="sobre.html">Sobre</a> |
-           <a href="cadastro.html">Cadastre-se</a>
+           <a href="login.html">Login</a>
         </nav>
     </header>
     <main>
         <div class="box">
-            <aside class="login">
-                <form action="#">
-                    <div class="login">
-                        <label for="gmail">Gmail :</label>
-                        <input type="email" name="email" id="gmail" class="input">
-                    </div>
-                    <div class="login">
-                        <label for="senha">Senha :</label>
-                        <input type="password" name="Senha" id="senha" class="input">
-                    </div>
-                    <input type="button" value="Login" class="Login">
-                </form>
-            </aside>
             <forms action="#" class="cadastroforms">
                 <div class="cadastro">
                     <label for="nome">Nome :</label>
@@ -56,9 +43,15 @@
                     <label for="senha">Senha :</label>
                     <input type="password" name="senha" id="senha" class="input">
                 </div>
-                <input type="button" value="Cadastrar" id="Cadastrar" class="Cadastrar">
+                <input type="button" value="Cadastrar" id="Cadastrar" class="Cadastrar" onclick="cadastrar()">
             </forms>
         </div>
     </main>
+
+    <script>
+        function cadastrar(){
+            alert("Usuário cadastrado com sucesso!")
+        }
+    </script>
 </body>
 </html>
