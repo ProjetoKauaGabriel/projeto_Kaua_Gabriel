@@ -36,8 +36,8 @@
                     <input type="number" name="cpf" id="cpf" class="input">
                 </div>
                 <div class="cadastro">
-                    <label for="gmail">Email :</label>
-                    <input type="email" name="gmail" id="gmail" class="input">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" class="input">
                 </div>
                 <div class="cadastro">
                     <label for="senha">Senha :</label>
@@ -50,7 +50,15 @@
 
     <script>
         function cadastrar(){
-            alert("Usuário cadastrado com sucesso!")
+            let nome = document.getElementById ("nome").value 
+            let datanascimento = document.getElementById ("datanascimento").value
+            let telefone = document.getElementById ("telefone").value 
+            let cpf = document.getElementById ("cpf").value 
+            let email = document.getElementById ("email").value
+            let senha = document.getElementById ("senha").value
+            
+       
+       
         }
     </script>
 </body>
