@@ -19,13 +19,13 @@
     <main>
         <div class="box">
             <aside class="login">
-                <form action="#">
+                <form action="#" name="formlogin" method="post">
                     <div class="login">
-                        <label for="gmail">Email :</label>
-                        <input type="email" name="email" id="gmail" class="input">
+                        <label for="gmail" id="labelEmail">Email :</label>
+                        <input type="email" name="email" id="email" class="input">
                     </div>
                     <div class="login">
-                        <label for="senha">Senha :</label>
+                        <label for="senha" id="labelSenha">Senha :</label>
                         <input type="password" name="Senha" id="senha" class="input">
                     </div>
                     <input type="button" value="Login" class="Login" onclick="logar()">
@@ -36,19 +36,36 @@
     </main>
 
     <script>
+        function limpar(){
+            
+        }
+
         function logar(){
-            let gmail = document.getElementById('gmail').value
+            let enviar = true
+            let email = document.getElementById('email').value
             let senha = document.getElementById('senha').value
 
-            if(gmail == ''){
+            if(email.length == 0 || email.indexOf("@")<0 || email.trim() == ''){
                 alert("Email inválido")
+                document.getElementById('labelEmail').style.color = "red"
+                document.getElementById('email').style.borderColor = "red"
+                enviar = false
             }
 
-            if(senha == ''){
+            if(senha == '' || senha.length <= 6){
                 alert("Senha inválida")
+                document.getElementById('labelSenha').style.color = "red"
+                document.getElementById('senha').style.borderColor = "red"
+                enviar = false
             }
 
-           alert("Usuário logado com sucesso!")
+            if(enviar == true){
+                alert("Usuario logado com sucesso")
+            //    document.formlogin.submit()
+            }else {
+                alert("Por favor preencha todos os campos.")                
+            }
+
         }
     </script>
 </body>
