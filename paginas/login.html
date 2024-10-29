@@ -21,7 +21,7 @@
             <aside class="login">
                 <form action="#">
                     <div class="login">
-                        <label for="gmail">Gmail :</label>
+                        <label for="gmail">Email :</label>
                         <input type="email" name="email" id="gmail" class="input">
                     </div>
                     <div class="login">
@@ -37,8 +37,18 @@
 
     <script>
         function logar(){
-            
-            alert("Usuário logado com sucesso!")
+            let gmail = document.getElementById('gmail').value
+            let senha = document.getElementById('senha').value
+
+            if(gmail == ''){
+                alert("Email inválido")
+            }
+
+            if(senha == ''){
+                alert("Senha inválida")
+            }
+
+           alert("Usuário logado com sucesso!")
         }
     </script>
 </body>
