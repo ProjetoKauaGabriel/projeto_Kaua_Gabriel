@@ -21,7 +21,8 @@
             <forms action="#" name = "cadastroforms" method = "post" class="cadastroforms">
                 <div class="cadastro">
                     <label for="nome" id="labelNome">Nome :</label>
-                    <input type="text" name="nome" id="nome" class="input">
+                    <input type="text" 
+                    name="nome" id="nome" class="input" oninput="rejectNumbers(this)">
                 </div>
                 <div class="cadastro">
                     <label for="datanascimento" id="labelDataNasci">Data de Nascimento :</label>
@@ -53,6 +54,9 @@
     </main>
 
     <script>
+        function rejectNumbers(input) {
+            input.value = input.value.replace(/[0-9]/g, '');
+        }
         function cadastrar(){
             let nome = document.getElementById ("nome").value 
             let datanascimento = document.getElementById ("datanascimento").value
@@ -113,7 +117,7 @@
             }
 
             if(enviar == true){
-                alert("Usuário cadastrodo com sucesso!")
+                alert("Usuário cadastrado com sucesso!")
                // document.cadastroforms.submit()
             } else{
                 alert("Preencha todos os campos corretamente")
