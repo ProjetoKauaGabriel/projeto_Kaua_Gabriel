@@ -58,6 +58,30 @@
             let senha = document.getElementById ("senha").value
             let enviar = true
 
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            if(cpf.length < 11){
+                alert("CPF inválido")
+            }
+
+            if(email.length == 0 || email.indexOf("@")<0 || email.trim() == ''){
+                alert("Email inválido")
+            }
+
+            if(senha.lenght < 8){
+                alert("Senha inválida")
+            }
+
             if(enviar == true){
                 alert("Usuário cadastrodo com sucesso!")
                // document.cadastroforms.submit()
