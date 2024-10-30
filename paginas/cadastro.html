@@ -58,6 +58,15 @@
             let senha = document.getElementById ("senha").value
             let enviar = true
 
+            if(nome.length <3){
+                alert("Nome inválido")
+            }
+            if(datanascimento.length <8){
+                alert("Data inexistente")
+            }
+            if(telefone.length <11){
+                alert("telefone inválido")
+            }
             if(enviar == true){
                 alert("Usuário cadastrodo com sucesso!")
                // document.cadastroforms.submit()
