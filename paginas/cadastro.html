@@ -43,6 +43,10 @@
                     <label for="senha" id="labelSenha">Senha :</label>
                     <input type="password" name="senha" id="senha" class="input">
                 </div>
+                <div class="cadastro">
+                    <label for="confirmsenha" id="labelConfirmar">Confirmar Senha</label>
+                    <input type="password" name="confirmsenha" id="confirmsenha" class="input">
+                </div>
                 <input type="button" value="Cadastrar" id="Cadastrar" class="Cadastrar" onclick="cadastrar()">
             </forms>
         </div>
@@ -56,30 +60,63 @@
             let cpf = document.getElementById ("cpf").value 
             let email = document.getElementById ("email").value
             let senha = document.getElementById ("senha").value
+            let confirmsenha = document.getElementById("confirmsenha").value
             let enviar = true
+
             if(nome.length <3){
                 alert("Nome inválido")
+                document.getElementById("labelNome").style.color = "red"
+                document.getElementById("nome").style.borderColor = "red"
+                enviar = false
             }
+
             if(datanascimento.length <8){
                 alert("Data inexistente")
+                document.getElementById("labelDataNasci").style.color = "red"
+                document.getElementById("datanascimento").style.borderColor = "red"
+                enviar = false
             }
+
             if(telefone.length <11){
                 alert("telefone inválido")
-            }         
+                document.getElementById("labelTel").style.color = "red"
+                document.getElementById("telefone").style.borderColor = "red"
+                enviar = false
+            }
+
             if(cpf.length < 11){
                 alert("CPF inválido")
+                document.getElementById("labelCpf").style.color = "red"
+                document.getElementById("cpf").style.borderColor = "red"
+                enviar = false
             }
+
             if(email.length == 0 || email.indexOf("@")<0 || email.trim() == ''){
                 alert("Email inválido")
+                document.getElementById("labelEmail").style.color = "red"
+                document.getElementById("email").style.borderColor = "red"
+                enviar = false
             }
+
             if(senha.lenght < 8){
                 alert("Senha inválida")
+                document.getElementById("labelSenha").style.color = "red"
+                document.getElementById("senha").style.borderColor = "red"
+                enviar = false
             }
+
+            if(confirmsenha != senha){
+                alert("Senhas diferentes")
+                document.getElementById("labelConfirmar").style.color = "red"
+                document.getElementById("confirmsenha").style.borderColor = "red"
+                enviar = false
+            }
+
             if(enviar == true){
                 alert("Usuário cadastrodo com sucesso!")
                // document.cadastroforms.submit()
             } else{
-                alert("Preencha todos os campos")
+                alert("Preencha todos os campos corretamente")
             }
 
         }
