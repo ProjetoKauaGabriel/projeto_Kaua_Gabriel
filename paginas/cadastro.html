@@ -57,7 +57,6 @@
             let email = document.getElementById ("email").value
             let senha = document.getElementById ("senha").value
             let enviar = true
-
             if(nome.length <3){
                 alert("Nome inválido")
             }
@@ -66,6 +65,11 @@
             }
             if(telefone.length <11){
                 alert("telefone inválido")
+            if(email.length == 0 || email.indexOf("@")<0 || email.trim() == ''){
+                alert("Email inválido")
+            }
+            if(senha.lenght < 8){
+                alert("Senha inválida")
             }
             if(enviar == true){
                 alert("Usuário cadastrodo com sucesso!")

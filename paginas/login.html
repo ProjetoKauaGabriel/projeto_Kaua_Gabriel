@@ -48,7 +48,7 @@
                 enviar = false
             }
 
-            if(senha == '' || senha.length <= 6){
+            if(senha.length < 8){
                 alert("Senha inválida")
                 document.getElementById('labelSenha').style.color = "red"
                 document.getElementById('senha').style.borderColor = "red"
