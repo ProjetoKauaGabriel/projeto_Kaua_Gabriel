@@ -30,11 +30,11 @@
                 </div>
                 <div class="cadastro">
                     <label for="telefone" id="labelTel">Telefone :</label>
-                    <input type="tel" name="telefone" id="telefone" class="input">
+                    <input type="tel" name="telefone" id="telefone" class="input" maxlength="11">
                 </div>
                 <div class="cadastro">
                     <label for="cpf" id="labelCpf">CPF :</label>
-                    <input type="number" name="cpf" id="cpf" class="input">
+                    <input type="number" name="cpf" id="cpf" class="input" maxlength="11">
                 </div>
                 <div class="cadastro">
                     <label for="email" id="labelEmail">Email :</label>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="cadastro">
                     <label for="senha" id="labelSenha">Senha :</label>
-                    <input type="password" name="senha" id="senha" class="input">
+                    <input type="password" name="senha" id="senha" class="input" maxlength="10">
                 </div>
                 <div class="cadastro">
                     <label for="confirmsenha" id="labelConfirmar">Confirmar Senha</label>
@@ -57,6 +57,7 @@
         function rejectNumbers(input) {
             input.value = input.value.replace(/[0-9]/g, '');
         }
+
         function cadastrar(){
             let nome = document.getElementById ("nome").value 
             let datanascimento = document.getElementById ("datanascimento").value
@@ -67,28 +68,28 @@
             let confirmsenha = document.getElementById("confirmsenha").value
             let enviar = true
 
-            if(nome.length <3){
+            if(nome.length <3 || nome.length == 0){
                 alert("Nome inválido")
                 document.getElementById("labelNome").style.color = "red"
                 document.getElementById("nome").style.borderColor = "red"
                 enviar = false
             }
 
-            if(datanascimento.length <8){
+            if(datanascimento.length <8 || datanascimento.length == 0){
                 alert("Data inexistente")
                 document.getElementById("labelDataNasci").style.color = "red"
                 document.getElementById("datanascimento").style.borderColor = "red"
                 enviar = false
             }
 
-            if(telefone.length <11){
+            if(telefone.length <11 || telefone.length == 0){
                 alert("telefone inválido")
                 document.getElementById("labelTel").style.color = "red"
                 document.getElementById("telefone").style.borderColor = "red"
                 enviar = false
             }
 
-            if(cpf.length < 11){
+            if(cpf.length < 11 || cpf.length == 0){
                 alert("CPF inválido")
                 document.getElementById("labelCpf").style.color = "red"
                 document.getElementById("cpf").style.borderColor = "red"
@@ -102,14 +103,14 @@
                 enviar = false
             }
 
-            if(senha.lenght < 8){
+            if(senha.length < 8 || senha.length == 0){
                 alert("Senha inválida")
                 document.getElementById("labelSenha").style.color = "red"
                 document.getElementById("senha").style.borderColor = "red"
                 enviar = false
             }
 
-            if(confirmsenha != senha){
+            if(confirmsenha != senha || senha.length == 0){
                 alert("Senhas diferentes")
                 document.getElementById("labelConfirmar").style.color = "red"
                 document.getElementById("confirmsenha").style.borderColor = "red"
